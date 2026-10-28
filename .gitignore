@@ -1,0 +1,8 @@
+# Configuração local do banco (não versionar)
+config/local.php
+
+# Arquivos do sistema operacional / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
