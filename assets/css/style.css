@@ -1,0 +1,94 @@
+/* ===== LogiFrete - estilos complementares ao Bootstrap ===== */
+
+body {
+    background-color: #f4f7fb;
+}
+
+.logo-box {
+    display: inline-block;
+    background: #fff;
+    color: #2fa4e7;
+    border-radius: 6px;
+    padding: 0 6px;
+    margin-right: 4px;
+    font-size: .9rem;
+}
+
+.hero {
+    background: linear-gradient(135deg, #2fa4e7 0%, #1b6fa3 100%);
+    color: #fff;
+}
+
+.hero h1 {
+    color: #fff;
+}
+
+.card {
+    border: 0;
+    border-radius: 10px;
+}
+
+.card-header {
+    border-bottom: 1px solid #e9eef4;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.card-resumo {
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+a.card-resumo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .12) !important;
+}
+
+/* Formulários simples ficam centralizados e com largura confortável */
+.form-card {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Placa no estilo Mercosul */
+.placa {
+    display: inline-block;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid #1b3c73;
+    border-top-width: 5px;
+    border-radius: 4px;
+    padding: 0 6px;
+    background: #fff;
+}
+
+.resumo-frete div {
+    padding: 2px 0;
+}
+
+.table th {
+    white-space: nowrap;
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #5b6b7d;
+}
+
+/* Linha removida animada (JavaScript) */
+.linha-produto.removendo {
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+/* Impressão do relatório / frete: esconde menu e botões */
+@media print {
+    header, .no-print, footer, .btn {
+        display: none !important;
+    }
+    body {
+        background: #fff;
+    }
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #ccc;
+    }
+}
